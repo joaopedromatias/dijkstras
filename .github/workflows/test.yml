@@ -1,0 +1,14 @@
+on:
+  push:
+    branches:
+      - '*'
+
+name: Test Workflow
+
+jobs:
+  test:
+    name: Test
+    runs-on: ['ubuntu-latest']
+    steps:
+      - name: Test
+        run: npm test
